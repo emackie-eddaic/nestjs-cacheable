@@ -1,0 +1,70 @@
+{
+  "name": "@eddaic/nestjs-cacheable",
+  "version": "1.0.0",
+  "description": "Cacheable module for DNS caching.",
+  "main": "index.js",
+  "author": "Eric Mackie <eric.mackie@essolutions.ca>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emackie-eddaic/nestjs-cacheable.git"
+  },
+  "keywords": [
+    "nestjs",
+    "module",
+    "cacheable"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix",
+    "test": "jest",
+    "test:cov": "jest --coverage"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^10.4.4",
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.1",
+    "ts-jest": "^29.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "5.5.3"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.4.4",
+    "cacheable-lookup": "^6.1.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "coveragePathIgnorePatterns": [
+      "index.ts",
+      "swagger.ts"
+    ],
+    "coverageReporters": [
+      "html",
+      "text",
+      "text-summary",
+      "cobertura"
+    ],
+    "testEnvironment": "node"
+  }
+}
