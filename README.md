@@ -1,6 +1,6 @@
 # nestjs-cacheable
 
-Add DNS caching to NestJS.
+Simple [NestJS](https://nestjs.com/) Module to add DNS cache using [szmarczak/cacheable-lookup](https://github.com/szmarczak/cacheable-lookup#readme).
 
 ## Installation
 
@@ -27,7 +27,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
       }),
     }),
   ],
-  providers: [MyService],
+  providers: [AppService],
 })
-export class MyModule {}
+export class AppModule {}
 ```
