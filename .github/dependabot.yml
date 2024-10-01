@@ -22,11 +22,14 @@ updates:
       - 'emackie-eddaic'
     reviewers:
       - 'emackie-eddaic'
+    commit-message:
+      prefix: 'feat'
+      prefix-development: 'chore'
+      include: 'scope'
     ignore:
       # For all packages, ignore all patch and major updates
       - dependency-name: '*'
-        update-types:
-          ['version-update:semver-patch', 'version-update:semver-major']
+        update-types: ['version-update:semver-major']
     groups:
       jest:
         patterns:
@@ -34,7 +37,13 @@ updates:
           - 'jest'
       nestjs:
         patterns:
-          - '@nestjs/*'
+          - '@nestjs/common'
+          - '@nestjs/testing'
+      prettier:
+        patterns:
+          - 'eslint-config-prettier'
+          - 'eslint-plugin-prettier'
+          - 'prettier'
       typescript-eslint:
         patterns:
           - '@typescript-eslint/*'
