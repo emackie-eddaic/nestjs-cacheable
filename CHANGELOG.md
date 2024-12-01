@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/emackie-eddaic/nestjs-cacheable/compare/v1.2.0...v1.3.0) (2024-12-01)
+
+
+### Features
+
+* **deps:** bump the nestjs group with 2 updates ([#19](https://github.com/emackie-eddaic/nestjs-cacheable/issues/19)) ([48670f2](https://github.com/emackie-eddaic/nestjs-cacheable/commit/48670f2df6727dcd75c29873d733151bedb36c5f))
+
 ## [1.2.0](https://github.com/emackie-eddaic/nestjs-cacheable/compare/v1.1.0...v1.2.0) (2024-10-28)
 
 
